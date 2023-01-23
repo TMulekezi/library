@@ -97,7 +97,12 @@ closeButton.addEventListener("click", ()=>{
 
 
 
-function onFormSubmit() {
+const form = document.querySelector("form");
+form.addEventListener("submit", onFormSubmit);
+
+
+
+function onFormSubmit(event) {
 	event.preventDefault();
 
     const title = document.querySelector("#title");
