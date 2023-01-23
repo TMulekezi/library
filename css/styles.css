@@ -15,7 +15,8 @@ body {
 .container {
     display: grid;
     height: 100%;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: minmax(81.25px, 1fr) 10fr 1fr;
+    grid-template-columns: minmax(710px, 100%);
     flex: 1 0 auto;
 }
 
