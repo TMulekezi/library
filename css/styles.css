@@ -15,14 +15,15 @@ body {
 .container {
     display: grid;
     height: 100%;
-    grid-template-rows: minmax(81.25px, 1fr) 10fr 1fr;
-    grid-template-columns: minmax(710px, 100%);
+    grid-template-rows: 1fr 10fr 1fr;
+
     flex: 1 0 auto;
 }
 
 .header {
     grid-area: 1/ 1/ 2/ 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #d5e1df;
